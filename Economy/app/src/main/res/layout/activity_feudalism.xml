@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeudalismActivity">
+
+    <FrameLayout
+        android:id="@+id/frameHeader"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/label_worlds"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/the_feudalism_world" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account_label"
+                app:layout_constraintVertical_bias="0.216"
+                app:srcCompat="@drawable/red_line" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameDescription"
+        android:layout_width="357dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="342dp"
+                android:layout_height="0dp"
+                android:text="Происхождение феодализма связано с распадом родо-племенного строя, последней стадией которого была так называемая военная демократия. Воины дружин вождей получали во владение земли с крестьянами (особенно при завоеваниях) и становились, таким образом, феодалами. Феодалами становилась и племенная знать."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rules_game3"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:shadowColor="#878787"
+        android:shadowDy="10"
+        android:shadowRadius="5"
+        android:text="Раздайте ресурсы таким способом чтобы два владение выжили"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameDescription" />
+
+    <FrameLayout
+        android:id="@+id/frameDistributor"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules_game3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="Всего очков:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_score_people"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="Количество очков за одного человека: 1"
+                android:textAlignment="textStart"
+                android:textColor="#3F51B5"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+            <TextView
+                android:id="@+id/text_score_land"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="Количество очков за одного землю: 5"
+                android:textAlignment="textStart"
+                android:textColor="#E91E63"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_score_people" />
+
+            <TextView
+                android:id="@+id/text_score"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="100"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/text_title"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_fertility"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="Плодородность земли"
+                android:textAlignment="textStart"
+                android:textColor="#FF7700"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_score_land" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameGameplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameDistributor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/point_a"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/point_a" />
+
+            <ImageView
+                android:id="@+id/point_b"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/point_b" />
+
+            <TextView
+                android:id="@+id/text_score_point_a"
+                android:layout_width="54dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="0"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/point_a"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_fertility_point_a"
+                android:layout_width="54dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="84%"
+                android:textAlignment="viewStart"
+                android:textColor="#FF7700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/point_a"
+                app:layout_constraintTop_toBottomOf="@+id/text_score_point_a" />
+
+            <TextView
+                android:id="@+id/text_fertility_point_a2"
+                android:layout_width="54dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="63%"
+                android:textAlignment="textEnd"
+                android:textColor="#FF7700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/point_b"
+                app:layout_constraintTop_toBottomOf="@+id/text_score_point_b" />
+
+            <TextView
+                android:id="@+id/text_score_point_b"
+                android:layout_width="54dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#878787"
+                android:shadowDy="10"
+                android:shadowRadius="5"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/point_b"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/adder_people_a"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="4dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/point_a" />
+
+            <Button
+                android:id="@+id/adder_people_b"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="48dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/point_b" />
+
+            <Button
+                android:id="@+id/adder_land_a"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="48dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="#E91E63"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adder_people_a" />
+
+            <Button
+                android:id="@+id/adder_land_b"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="48dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="#E91E63"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adder_people_b" />
+
+            <Button
+                android:id="@+id/cleaner_point_b"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:text="clean"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adder_land_b" />
+
+            <Button
+                android:id="@+id/feudalism_returner"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:text="return"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintEnd_toStartOf="@+id/cleaner_point_b"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cleaner_point_a2"
+                app:layout_constraintTop_toBottomOf="@+id/adder_land_a" />
+
+            <Button
+                android:id="@+id/checher"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="12dp"
+                android:text="check"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintBottom_toTopOf="@+id/feudalism_returner"
+                app:layout_constraintEnd_toStartOf="@+id/cleaner_point_b"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cleaner_point_a2" />
+
+            <Button
+                android:id="@+id/cleaner_point_a2"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:text="clean"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adder_land_a" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

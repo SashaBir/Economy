@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlaveActivity">
+
+    <FrameLayout
+        android:id="@+id/frameHeader"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/label_worlds"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/the_slave_world" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account_label"
+                app:layout_constraintVertical_bias="0.216"
+                app:srcCompat="@drawable/red_line" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rules_game2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:shadowColor="#878787"
+        android:shadowDy="10"
+        android:shadowRadius="5"
+        android:text="Прожмите в правильном порядке появления рабовладельчества"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameHeader" />
+
+    <FrameLayout
+        android:id="@+id/frameGameplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules_game2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameEconomy"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="151dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/economy_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:lineSpacingExtra="10sp"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="0"
+                        android:text="Появление скотоводства и земледелия"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        app:cornerRadius="90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:visibility="visible"></Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/economy_highlighting"
+                        android:layout_width="175dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginEnd="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/highlighting" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameExcess"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/excess_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:lineSpacingExtra="10sp"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="0"
+                        android:text="Человек производит избыток"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        app:cornerRadius="90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:visibility="visible"></Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/excess_highlighting"
+                        android:layout_width="175dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginEnd="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/highlighting" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameCapture"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="306dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/capture_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:lineSpacingExtra="10sp"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="0"
+                        android:text="Захват человека"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        app:cornerRadius="90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:visibility="visible"></Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/capture_highlighting"
+                        android:layout_width="175dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginEnd="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/highlighting" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLabour"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="236dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/labour_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:lineSpacingExtra="10sp"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="0"
+                        android:text="Принуждения к труду"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        app:cornerRadius="90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:visibility="visible"></Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/labour_highlighting"
+                        android:layout_width="175dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginEnd="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/highlighting" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameResult"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/result_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:lineSpacingExtra="10sp"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="0"
+                        android:text="Результат труда"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        app:cornerRadius="90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:visibility="visible"></Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/result_highlighting"
+                        android:layout_width="175dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginEnd="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/highlighting" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameAssignment"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="376dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/assignment_button"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:lineSpacingExtra="10sp"
+                        android:shadowDx="0"
+                        android:shadowDy="10"
+                        android:shadowRadius="0"
+                        android:text="Присвоить труд"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="14sp"
+                        app:cornerRadius="90dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:visibility="visible"></Button>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/assignment_highlighting"
+                        android:layout_width="175dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginEnd="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/highlighting" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/returner_slave_menu"
+                android:layout_width="228dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="5dp"
+                android:text="Return"
+                android:textSize="24sp"
+                app:cornerRadius="90dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameAssignment" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
